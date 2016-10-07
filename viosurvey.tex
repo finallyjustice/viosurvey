@@ -1,0 +1,94 @@
+% TEMPLATE for Usenix papers, specifically to meet requirements of
+%  USENIX '05
+% originally a template for producing IEEE-format articles using LaTeX.
+%   written by Matthew Ward, CS Department, Worcester Polytechnic Institute.
+% adapted by David Beazley for his excellent SWIG paper in Proceedings,
+%   Tcl 96
+% turned into a smartass generic template by De Clarke, with thanks to
+%   both the above pioneers
+% use at your own risk.  Complaints to /dev/null.
+% make it two column with no page numbering, default is 10 point
+
+% Munged by Fred Douglis <douglis@research.att.com> 10/97 to separate
+% the .sty file from the LaTeX source template, so that people can
+% more easily include the .sty file into an existing document.  Also
+% changed to more closely follow the style guidelines as represented
+% by the Word sample file. 
+
+% Note that since 2010, USENIX does not require endnotes. If you want
+% foot of page notes, don't include the endnotes package in the 
+% usepackage command, below.
+
+% This version uses the latex2e styles, not the very ancient 2.09 stuff.
+%\documentclass[letterpaper,twocolumn,10pt]{article}
+\documentclass[10pt,reprint]{socc14}
+
+\special{papersize=8.5in,11in}
+\setlength{\pdfpageheight}{\paperheight}
+\setlength{\pdfpagewidth}{\paperwidth}
+
+\conferenceinfo{Technical Report}{Octobor, 2016, Beijing, China} 
+\copyrightyear{2014} 
+\copyrightdata{978-1-nnnn-nnnn-n/yy/mm} 
+\doi{nnnnnnn.nnnnnnn}
+
+%\usepackage{usenix,epsfig,endnotes}
+\usepackage{epsfig,endnotes}
+\usepackage[english]{babel}
+\usepackage{color}
+\usepackage{needspace}
+\usepackage{amsfonts}
+\usepackage{amsmath, amssymb}
+\usepackage{epsfig}
+\usepackage{url}
+\usepackage{tabularx}
+\usepackage{todonotes}
+\usepackage{algorithm, algorithmic}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage{graphicx, subfigure}
+\usepackage{booktabs}
+\usepackage{dcolumn}
+\usepackage{array}
+\usepackage{listings}
+\newcommand{\dpi}[1]{{\textcolor{red}{\bf #1}}}
+\setlength{\marginparwidth}{2cm}
+% \def\todo#1{\textbf{[TODO:~#1]}\footnote{TODO:~#1}}
+\def\todox#1{{\bf \textcolor{red}{TODO:~#1}}}
+\def\etal{et\ al.\ }
+
+%\def\sysname{DIMMer~}
+
+\begin{document}
+
+%don't want date printed
+\date{}
+
+%make title bold and 14 pt font (Latex default is non-bold, 16 pt)
+\title{A Survey on Virtualized I/O Performance Improvement}
+\subtitle{}
+%{Turn Off Memory and CPU: a Great Fertilizer for Green Data Centers!}
+
+%for single author (just remove % characters)
+
+\authorinfo{Dongli Zhang}
+           {}
+		   {dongli.zhang@oracle.com}
+
+\maketitle
+%
+%% Use the following at camera-ready time to suppress page numbers.
+%% Comment it out when you first submit the paper for review.
+%\thispagestyle{empty}
+%
+
+\subsection*{Abstract}
+This is abstract
+%\end{abstract}
+
+\input{introduction}
+
+\bibliographystyle{plain}
+\bibliography{refs}
+
+\end{document}
