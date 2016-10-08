@@ -1,0 +1,13 @@
+I/O Virtualization
+* emulated devices
+* paravirtual I/O
+* device passthrough
+
+Improvements:
+* increase bandwidth
+  > increase buffer size
+  > increase channel number 
+* reduce latency
+  > reduce interrupt cost
+  > get rid of middle layers
+  > reduce tlbflush
